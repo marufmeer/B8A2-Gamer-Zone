@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Hover Effect</title>
+    <style>
+        /* Style for the buttons container */
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        /* Style for the individual buttons */
+        .button {
+            position: relative;
+            border: 1px solid transparent; /* Initial border */
+            padding: 10px;
+            background-color: #f0f0f0;
+            cursor: pointer;
+            transition: border 0.3s, padding 0.3s, background-color 0.3s, color 0.3s;
+        }
+
+        /* Style for the button image */
+        .button img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Style for the button text */
+        .button span {
+            display: block;
+            margin-top: 5px;
+            text-align: center;
+        }
+
+        /* Hover effect for the specific button */
+        .button:hover {
+            border: 1px solid #007bff; /* Border on hover */
+            padding: 15px; /* Padding on hover */
+            background-color: #ffffff; /* Background color on hover */
+            color: #007bff; /* Text color on hover */
+        }
+        .button2{
+            position:relative absolute;
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <!-- Button 1 -->
+        <div class="button">
+            <img src="image1.jpg" alt="Button 1 Image">
+            <span>Button 1</span>
+        </div>
+
+        <!-- Button 2 -->
+        <div class="button2">
+            <img src="image2.jpg" alt="Button 2 Image">
+            <span>Button 2</span>
+        </div>
+
+        <!-- Repeat this structure for the other buttons -->
+        <!-- Button 3, Button 4, ... -->
+    </div>
+</body>
+</html>
